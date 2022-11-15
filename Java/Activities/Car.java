@@ -1,4 +1,4 @@
-package Activity;
+package activities;
 
 public class Car {
     String color;
@@ -8,8 +8,8 @@ public class Car {
     int doors;
 
     public Car(){
-        tyres=4;
-        doors=4;
+       tyres=4;
+       doors=4;
     }
     public void displayCharacteristics(){
         System.out.println("Color = "+color);
@@ -19,7 +19,7 @@ public class Car {
         System.out.println("Doors = "+doors);
     }
     public void accelarate(){
-        System.out.println("Car is moving forward.");
+      System.out.println("Car is moving forward.");
     }
     public void brake(){
         System.out.println("Car has stopped.");

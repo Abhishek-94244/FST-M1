@@ -1,34 +1,20 @@
-package Activity;
-
-import java.util.Arrays;
+package activities;
 
 public class Activity2 {
-
-        public static void main(String[] args) {
-
-            int[] numArr = {10, 77, 10, 54, -11, 10};
-            System.out.println("Original Array: " + Arrays.toString(numArr));
-
-
-            int searchNum = 10;
-            int fixedSum = 30;
-
-            //Print result
-            System.out.println("Result: " + result(numArr, searchNum, fixedSum));
-        }
-        public static boolean result(int[] numbers, int searchNum, int fixedSum) {
-            int temp_sum = 0;
-            for (int number : numbers) {
-
-                if (number == searchNum) {
-                    //Add them
-                    temp_sum += searchNum;
-                }
-                if (temp_sum > fixedSum) {
-                    break;
-                }
-            }
-            return temp_sum == fixedSum;
-        }
+    public static void main(String[] args){
+        int[] array= {10, 77, 10, 54, -11, 10};
+        System.out.println("result "+ sumNum(array));
     }
-
+    public static boolean sumNum(int[] arrays){
+        int sum=0;
+        for (int num: arrays) {
+            if(num==10){
+                sum=sum+num;
+            }
+        }
+        if(sum==30)
+            return true;
+        else
+            return false;
+    }
+}
